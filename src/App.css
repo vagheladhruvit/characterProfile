@@ -1,0 +1,341 @@
+/* src/App.css */
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #aaaaaa;
+}
+
+nav {
+  background-color: #222;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff7e27;
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.filterContainer {
+  max-width: 1200px;
+  margin: 5px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: larger;
+  font-weight: 800;
+  color: #222;
+}
+
+.filterText {
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.filterNameLabel,
+.filterLocationLabel,
+.filterEpisodesLabel {
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+}
+
+.filterNameInput,
+.filterLocationInput,
+.filterEpisodesInput {
+  background-color: #d5d5d5;
+  border: 3px outset #222;
+  height: 25px;
+  width: 175px;
+  color: #222;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 20px 20px;
+}
+
+.character-card {
+  border: 5px solid #d5d5d5;
+  background-color: #222;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+}
+
+.character-card img {
+  max-width: 75%;
+  height: auto;
+  display: inline;
+}
+
+.characterName {
+  font-size: xx-large;
+  font-weight: 700;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.character-card li {
+  list-style: none;
+}
+
+.characterType {
+  font-size: x-large;
+  font-weight: 600;
+  color: rgb(208, 255, 0);
+  margin-bottom: 5px;
+}
+
+.characterTotalEpisodes {
+  font-size: x-large;
+  font-weight: 600;
+  color: rgb(208, 255, 0);
+  margin-bottom: 5px;
+}
+
+.characterLocation {
+  font-size: x-large;
+  font-weight: 600;
+  color: rgb(208, 255, 0);
+  margin-bottom: 10px;
+}
+
+
+.CharacterDetailsButton:hover {
+  color: rgb(208, 255, 0);
+  text-decoration: none;
+  background-color: rgb(101, 119, 12);
+}
+
+.CharacterDetailsButton {
+  color: rgb(208, 255, 0);
+  font-size: medium;
+  font-weight: 600;
+  background-color: rgb(56, 63, 22);
+  height: 40px;
+  width: 120px;
+  border-radius: 20px 20px;
+  border: 3px;
+  border-color: #222;
+  border-style: outset;
+  cursor: pointer;
+}
+
+.character-details {
+  border: 5px solid #d5d5d5;
+  background-color: #222;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.characterDetailsName {
+  font-size: 300%;
+  font-weight: 800;
+  color: #ff6600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.characterDetailsStatus,
+.characterDetailsSpecies,
+.characterDetailsGender,
+.characterDetailsOrigin,
+.characterDetailsLocation,
+.characterDetailsEpisode,
+.characterDetailsCreated,
+.characterDetailsURL {
+  font-size: larger;
+  font-weight: 600;
+  color: rgb(208, 255, 0);
+  margin-bottom: 5px;
+}
+
+.characterDetailsLi {
+  font-size: medium;
+  font-weight: 400;
+  color: #ff6600;
+  margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .filterText {
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 5px;
+    display: block;
+  }
+
+  .characterDetailsImage {
+    width: 50%;
+  }
+
+  .filterNameLabel,
+  .filterLocationLabel,
+  .filterEpisodesLabel {
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
+    display: block;
+  }
+
+  .character-card {
+    padding: 5px;
+    margin: 5px;
+    display: block;
+  }
+
+  .character-card img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .characterName {
+    font-size: x-large;
+    padding: 0px;
+  }
+
+  .character-card ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .characterType,
+  .characterTotalEpisodes {
+    font-size: medium;
+    margin-bottom: 5px;
+  }
+
+  .characterLocation {
+    font-size: medium;
+    margin-bottom: 10px;
+  }
+
+  .CharacterDetailsButton {
+    font-size: small;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px 20px;
+    border: 3px;
+    border-color: #222;
+    border-style: outset;
+    cursor: pointer;
+  }
+
+  .characterDetailsName {
+    font-size: 200%;
+    font-weight: 700;
+  }
+
+  .characterDetailsStatus,
+  .characterDetailsSpecies,
+  .characterDetailsGender,
+  .characterDetailsOrigin,
+  .characterDetailsLocation,
+  .characterDetailsEpisode,
+  .characterDetailsCreated,
+  .characterDetailsURL {
+    font-size: smaller;
+    font-weight: 600;
+  }
+
+  .characterDetailsLi {
+    font-size: small;
+    font-weight: 400;
+  }
+
+  .character-details {
+    border: 5px solid #d5d5d5;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10 px;
+    margin: 10px;
+  }
+
+}
+
+
+.buttonPrevious {
+  color: #222;
+  font-size: small;
+  font-weight: 600;
+  background-color: #d5d5d5;
+  height: 25px;
+  width: 80px;
+  border-radius: 20px 20px;
+  border: 3px;
+  border-color: #222;
+  border-style: outset;
+  cursor: pointer;
+}
+
+.buttonPrevious:hover {
+  background-color: #a0a0a0;
+}
+
+.buttonNext:hover {
+  background-color: #a0a0a0;
+}
+
+.buttonNext {
+  color: #222;
+  font-size: small;
+  font-weight: 600;
+  background-color: #d5d5d5;
+  height: 25px;
+  width: 80px;
+  border-radius: 20px 20px;
+  border: 3px;
+  border-color: #222;
+  border-style: outset;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.paginationContainer {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.pagination button:disabled {
+  color: #999;
+  cursor: not-allowed;
+}
